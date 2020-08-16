@@ -29,7 +29,7 @@
 
 
 
-# Project Brief
+## Project Brief
 
 ### Resources: 
  
@@ -40,7 +40,7 @@
 
 ### Brief
 
-#### Additional Requirements
+### Additional Requirements
 
 ## Project Approach
 
