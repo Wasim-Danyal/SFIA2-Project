@@ -33,9 +33,9 @@
 
 ### Resources: 
  
--Project Tracking: https://wdprojects.atlassian.net/jira/software/projects/SP/boards/6
+- Project Tracking: https://wdprojects.atlassian.net/jira/software/projects/SP/boards/6
 
--Presentation: https://docs.google.com/presentation/d/1JXVnIQAHeAK6ObPgQj72CAIi_3lRLfPxG7FVDkNBsYI/edit
+- Presentation: https://docs.google.com/presentation/d/1JXVnIQAHeAK6ObPgQj72CAIi_3lRLfPxG7FVDkNBsYI/edit
 
 
 ### Brief
