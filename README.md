@@ -32,7 +32,8 @@
 ## Project Brief
 
  **Resources:**
-	 -  Project Tracking:
+	-  Project Tracking:
+	
 	- Presentation:
 
 
