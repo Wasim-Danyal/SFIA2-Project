@@ -5,7 +5,7 @@
 
 - [Project Brief](#Project-Brief)
 	* [Resources](#Resources)
-   * [Brief](#Brief)
+   * [Brief](#brief)
    * [Additional Requirements](#Additional-Requirements)
 - [Project Approach](#My-Approach)
    * [Initial Design](#Initial-Design)
