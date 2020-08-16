@@ -29,7 +29,7 @@
 
 
 
-## Project Brief
+# Project Brief
 
  **Resources:**
  
@@ -41,28 +41,28 @@
 
 **Additional Requirements**
 
-## Project Approach
+# Project Approach
 
 **Initial Design**
 
 **Implemented Approach**
 
-## Application Design
+# Application Design
 
 **User Interface**
 
-## Risk Assessment
+# Risk Assessment
 
-## CI Pipeline
+# CI Pipeline
 
-## Testing
+# Testing
 **Unit Testing**
 
 **Integration Testing**
 
 **Coverage Report**
 
-## Project Review
+# Project Review
 **Known Issues**
 
 **Future Improvements**
