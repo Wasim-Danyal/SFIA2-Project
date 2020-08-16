@@ -31,7 +31,7 @@
 
 # Project Brief
 
- **Resources:**
+### Resources: 
  
 -Project Tracking:
 -Presentation:
@@ -39,33 +39,36 @@
 
 ### Brief
 
-**Additional Requirements**
+### Additional Requirements
 
 # Project Approach
 
-**Initial Design**
+### Initial Design
 
-**Implemented Approach**
+### Implemented Approach
 
 # Application Design
 
-**User Interface**
+### User Interface 
 
 # Risk Assessment
 
 # CI Pipeline
 
 # Testing
-**Unit Testing**
 
-**Integration Testing**
+###Unit Testing
 
-**Coverage Report**
+###Integration Testing
+
+###Coverage Report
 
 # Project Review
-**Known Issues**
 
-**Future Improvements**
+###Known Issues
+
+###Future Improvements
+
 ## Author 
 
 Wasim Danyal
