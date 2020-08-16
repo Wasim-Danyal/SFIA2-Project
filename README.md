@@ -42,21 +42,21 @@
 
 ### Additional Requirements
 
-# Project Approach
+## Project Approach
 
 ### Initial Design
 
 ### Implemented Approach
 
-# Application Design
+## Application Design
 
 ### User Interface 
 
-# Risk Assessment
+## Risk Assessment
 
-# CI Pipeline
+## CI Pipeline
 
-# Testing
+## Testing
 
 ### Unit Testing
 
@@ -64,7 +64,7 @@
 
 ### Coverage Report
 
-# Project Review
+## Project Review
 
 ### Known Issues
 
