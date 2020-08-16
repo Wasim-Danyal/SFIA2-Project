@@ -33,10 +33,8 @@
 
  **Resources:**
  
-	-Project Tracking:
-	
-	
-	-Presentation:
+-Project Tracking:
+-Presentation:
 
 
 **Brief**
