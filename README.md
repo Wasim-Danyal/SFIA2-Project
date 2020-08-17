@@ -8,6 +8,7 @@
    * [Brief](#brief)
    * [Additional Requirements](#Additional-Requirements)
 - [Project Approach](#My-Approach)
+   * [Previous Project Reflection](#Previous-Project-Reflection)
    * [Initial Design](#Initial-Design)
    * [Implemented Approach](#Implemented-Approach)
    * [Tools](#Tools-used)
@@ -23,11 +24,6 @@
  	* [Known Issues](#Known-Issues)
    * [Future Improvements](#Future-Improvements)
 - [Author](#Author)
-
-
-
-
-
 
 
 ## Project Brief
@@ -65,6 +61,9 @@ Service 4: Generate a final object, this will be determined based on the values 
  
 
 ## Project Approach
+
+### Previous Project Reflection
+Overall, my previous project met the requrements which was to create a functioning CRUD application. I deployed my CRUD application with Jenkins & Gunicorn. My initial approach to the project was to deploy the application with gunicorn in  SystemD from Jenkins, in the end i did not deploy it via SystemD, I ended up deploying it with gunicorn through the Jenkins console. This was to ensure that if any changes were made for deployment durng the development phase the console  could be changed, for example if i were to test the application through jenkins without gunicorn i could change it to deploy through python3 app.py and avoid any colliding services, in this case if a SystemD service was in place for deployment. The reason i ended up going with gunicorn through Jenkins is because of a change of VM, deploying the application via gunicorn through Jenkins meant i could focus on core functionalities to meet project specification. As well as reflecting on deployment, looking at other key areas from the previous project there was alot of PFI. One being the risk assessment. The risk assessment for my SFIA-1 project was detailed enough to meet the criteria in stage 4 which requires the risk assessment to follow a matrix. Following up on the PFI for the risk assessment, more detail needs to be implemented, for example it will need more columns to explain procedures in place to overcome the risk and potentially going to detail about the aftermath of a risk. Another key area for PFI was in the application itself, reflecting on feedback the initial database structure used by the application needed to differ from the structure of the flask blog which was done before the project. The database only had two tables with a single one to many relationship, functionally this meant that the programme would work with a relationship however it was outlined that the structure should have a minimum of two relationships. Looking back on this PFI, future database structures will need to implement multiple table relationships.
 
 ### Initial Design
 
