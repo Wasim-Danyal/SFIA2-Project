@@ -34,6 +34,8 @@
 
 - Presentation: https://docs.google.com/presentation/d/1JXVnIQAHeAK6ObPgQj72CAIi_3lRLfPxG7FVDkNBsYI/edit
 
+- Risk Assessment: 
+
 
 ### Brief
 The brief that has been assigned is to create an application that generates “Objects” upon a set of predefined rules. The objective for the architechture for this project is to create a service-orientated architecture the application, this application must be made up of at least 4 services which work together, the targets for each service are:
