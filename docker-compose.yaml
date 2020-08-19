@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+    service1:
+        build:
+            context: ./service1
+            dockerfile: Dockerfile
+        image: wasimd/service1
+        ports:
+        - target: 5000
+          published: 5000
+    service2:
+        build:
+            context: ./service2
+            dockerfile: Dockerfile
+        image: wasimd/service2
+        ports:
+        - target: 5001
+          published: 5001
