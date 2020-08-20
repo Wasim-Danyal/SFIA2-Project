@@ -10,5 +10,5 @@ def home():
 @app.route('/generate', methods=['GET','POST'])
 def generate():
 	country = requests.get('http://35.246.2.9:5001/country')
-	city = requests.get('http://35.246.2.9:5001/city', data=country.text)
+	city = requests.get('http://35.246.2.9:5002/city', data=country.text)
 	return render_template('generate.html', countryname = country.text, cityname = city.text)
