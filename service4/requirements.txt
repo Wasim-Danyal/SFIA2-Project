@@ -1,0 +1,5 @@
+Flask==1.1.2
+Jinja2==2.10.3
+Werkzeug==0.16.0
+requests==2.22.0
+pytest==6.0.1
