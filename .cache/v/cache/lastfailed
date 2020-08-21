@@ -1,5 +1,0 @@
-{
-  "service1/tests/test_service1.py": true, 
-  "service3/tests/test_service3.py": true, 
-  "service4/tests/test_service4.py": true
-}

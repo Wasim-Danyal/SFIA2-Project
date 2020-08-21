@@ -11,4 +11,5 @@ def home():
 def generate():
 	country = requests.get('http://34.105.137.219:5001/country')
 	city = requests.get('http://34.105.137.219:5002/city', data=country.text)
-	return render_template('generate.html', countryname = country.text, cityname = city.text)
+	travel = requests.get('http://34.105.137.219:5003/travel', data1=city.text, data2=country.text)
+	return render_template('generate.html', countryname = country.text, cityname = city.text, travel = travel.text)
