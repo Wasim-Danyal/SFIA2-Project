@@ -23,4 +23,12 @@ services:
         image: wasimd/service3
         ports:
         - target: 5002
-          published: 5002
+          published: 5002 
+    service4:
+        build:
+            context: ./service4
+            dockerfile: Dockerfile
+        image: wasimd/service4
+        ports:
+        - target: 5003
+          published: 5003

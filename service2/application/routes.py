@@ -15,17 +15,3 @@ def countrynames():
 		]
 	countrychosen = countryname[random.randrange(5)]
 	return Response(countrychosen,mimetype='text/plain')
-
-@app.route('/city', methods=['GET','POST'])
-def citynames():
-	cityname={
-		"Canada": "Toronto",
-		"Russia" : "Moscow",
-		"USA" : "California",
-		"Czech Republic" : "Prague",
-		"France" : "Paris"
-	}
-
-	data_sent = request.data.decode('utf-8')
-	citychosen = cityname[data_sent]
-	return Response(citychosen, mimetype='text/plain') 
