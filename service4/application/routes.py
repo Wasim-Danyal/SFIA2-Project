@@ -1,24 +1,17 @@
 from flask import render_template, redirect, url_for, Response, request
 from application import app
 import requests 
-import random
 
+#replication of service3 to ensure routes working before i implement logic
 
-
-def decider(data14):
-    data1_sent = request.data1.decode('utf-8')
-    data2_sent = request.data2.decode('utf-8')
-
-
-
-
-
-
+def decider(countrycity):
+    c = countrycity
+    return c 
 
 @app.route('/')
-@app.route('/travel', methods=['GET'])
+@app.route('/food', methods=['GET', 'POST'])
 def travelchoice():
-    x = decider(data1)
-    y = decider(data2)
-    
-    return x, y
+
+    countrycity = request.data.decode('utf-8')
+    foodchoice = decider(countrycity)
+    return Response(foodchoice, mimetype='text/plain')
