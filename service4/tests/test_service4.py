@@ -9,9 +9,6 @@ class TestBase(TestCase):
 		return app
 
 class TestCountryFood(TestBase):
-	def test_countryfood(self):
-		with patch('requests.post') as c:
-			c.return_value.text = "Moscow"
-			response = self.client.post(url_for('travelchoice'))
-			self.assertIn(b'Bliny' or 'Kasha', response.data)
-
+    def test_food(self):
+        response = self.client.post(url_for('travelchoice'), data="Moscow")
+        self.assertIn(b'Bliny' or 'Kasha', response.data)

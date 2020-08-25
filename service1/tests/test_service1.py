@@ -12,3 +12,8 @@ class TestHome(TestBase):
 	def test_homepage(self):
 		response = self.client.get(url_for('home'))
 		self.assertEqual(response.status_code, 200) 
+
+class TestGenerateView(TestBase):
+    def test_generateview(self):
+        response = self.client.get(url_for('generate'))
+        self.assertEqual(response.status_code, 200)
