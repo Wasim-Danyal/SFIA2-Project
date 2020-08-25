@@ -97,7 +97,7 @@ The actual implemented approach is the same as the initial approach however the 
 When testing each service i wanted to test areas that users would use and also test the core functionalities of the services. Below are summaries of the tests for each service:
 
 - Service 1
- - The tests done for service one were to ensure that access to pages were working and the status code returned was 200 which ensures that the request to the page was              successful
+    - The tests done for service one were to ensure that access to pages were working and the status code returned was 200 which ensures that the request to the page was              successful
 ### Coverage Report
 
 ## Project Review
