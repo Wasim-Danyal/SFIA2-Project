@@ -16,7 +16,7 @@ def decider(countrycity):
     return random.choice(foods[countrycity])
     
 @app.route('/')
-@app.route('/food', methods=['GET', 'POST'])
+@app.route('/food', methods=['POST'])
 def travelchoice():
 
     countrycity = request.data.decode('utf-8')

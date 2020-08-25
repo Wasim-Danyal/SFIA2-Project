@@ -4,7 +4,7 @@ import requests
 import random
 
 @app.route('/')
-@app.route('/city', methods=['GET','POST'])
+@app.route('/city', methods=['POST'])
 def citynames():
 	cityname={
 		"Canada": "Toronto",
