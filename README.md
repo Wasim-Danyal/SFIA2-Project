@@ -95,19 +95,19 @@ The actual implemented approach is the same as the initial approach however the 
 ### Integration Testing
 When testing each service i wanted to test areas that users would use and also test the core functionalities of the services. Below are summaries of the tests for each service:
 
-**- Service 1**
+- **Service 1**
     - The tests done for service one were to ensure that access to pages were working and the status code returned was 200 which ensures that the request to the page was              successful. Below is a coverage report on this test:
     
     
-**- Service 2**
+- **Service 2**
     - The test done for service 2 was to ensure that requests to the api would return values that were intended to be returned from a list. The structure behind service 1 was to return a random item from the list. Below is a coverage report on this test:
     
     
-**- Service 3**
+- **Service 3**
     -
 
 
-**- Service 4**
+- **Service 4**
     -
     
 
