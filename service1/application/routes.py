@@ -9,7 +9,7 @@ def home():
 
 @app.route('/generate', methods=['GET','POST'])
 def generate():
-	country = requests.get('http://34.89.67.218:5001/country')
-	city = requests.post('http://34.89.67.218:5002/city', data=country.text)
-	food = requests.post('http://34.89.67.218:5003/food', data=city.text)
+	country = requests.get('http://34.105.167.93:5001/country')
+	city = requests.post('http://34.105.167.93:5002/city', data=country.text)
+	food = requests.post('http://34.105.167.93:5003/food', data=city.text)
 	return render_template('generate.html', countryname = country.text, cityname = city.text, food = food.text)

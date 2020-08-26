@@ -8,9 +8,7 @@ class TestBase(TestCase):
 		config_name = 'testing'
 		return app
 
-class TestCityName(TestBase):
-	def test_country(self):
-		with patch('requests.get') as c:
-			c.return_value.text = "USA"
-			response = self.client.get(url_for('citynames'))
-			self.assertIn(b'California', response.data)
+class TestCountryCity(TestBase):
+    def test_countrycityname(self):
+        response = self.client.post(url_for('citynames'), data_sent="USA")
+        self.assertIn(b'California', response.data)
