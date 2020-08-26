@@ -8,12 +8,12 @@ class TestBase(TestCase):
 		config_name = 'testing'
 		return app
 
-class TestCCPage(TestBase):
+class Test_CCPage(TestBase):
     def test_page(self):
         response = self.client.post(url_for('citynames'), data="USA")
         self.assertEqual(response.status_code, 200)
 
-class TestCountryCity(TestBase):
+class Test_CountryCity(TestBase):
     def test_countrycityname(self):
         response = self.client.post(url_for('citynames'), data="USA")
         self.assertIn(b'California', response.data)
