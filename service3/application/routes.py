@@ -14,6 +14,6 @@ def citynames():
 		"France" : "Paris"
 	}
 
-	data_sent = request.data.decode('utf-8')
-	citychosen = cityname[data_sent]
+	data = request.data.decode('utf-8')
+	citychosen = cityname[data]
 	return Response(citychosen, mimetype='text/plain') 
