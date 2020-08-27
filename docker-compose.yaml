@@ -8,6 +8,9 @@ services:
         ports:
         - target: 5000
           published: 5000
+          protocol: tcp
+        environment:
+          DATABASE_URI: mysql+pymysql://root:1234@34.105.173.206/Destination
     service2:
         build:
             context: ./service2
@@ -16,6 +19,7 @@ services:
         ports:
         - target: 5001
           published: 5001
+          protocol: tcp
     service3:
         build:
             context: ./service3
@@ -24,6 +28,7 @@ services:
         ports:
         - target: 5002
           published: 5002 
+          protocol: tcp
     service4:
         build:
             context: ./service4
@@ -32,3 +37,4 @@ services:
         ports:
         - target: 5003
           published: 5003
+          protocol: tcp
