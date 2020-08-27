@@ -2,7 +2,6 @@ from flask import render_template, redirect, url_for, request
 from application import app, db
 import requests
 from application.models import Destination
-from sqlalchemy import desc, func
 
 @app.route('/')
 @app.route('/home')
@@ -18,6 +17,6 @@ def generate():
 	db_info = Destination(country=country.text, city=city.text, food=food.text)
 	db.session.add(db_info)
 	db.session.commit()
-	recents=Destination.query.order_by(id.desc)
+	recents = Destination.query.first()
 	
 	return render_template('generate.html', countryname = country.text, cityname = city.text, food = food.text, display = recents)
