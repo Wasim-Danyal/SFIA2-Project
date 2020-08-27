@@ -10,7 +10,7 @@ services:
           published: 5000
           protocol: tcp
         environment:
-          DATABASE_URI: mysql+pymysql://root:1234@34.105.173.206/Destination
+          DATABASE_URI: ${DATABASE_URI}
     service2:
         build:
             context: ./service2
