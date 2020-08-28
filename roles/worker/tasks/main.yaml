@@ -1,0 +1,21 @@
+- name: install pip
+  apt:
+    name: python3-pip
+
+- name: Install docker with pip
+  pip:
+    name: docker
+
+- name: Add first node
+  docker_swarm:
+    state: join
+    advertise_addr: worker
+    join_token: "SWMTKN-1-688m62bmc7um0shuxsea0u8c518l1nhr8awvuz9nslcrn3ti3g-1y0ulnera9vcvscqjl53h1va7 10.154.0.25:2377"
+    remote_addrs: wasimvm:2377
+
+- name: Add second node
+  docker_swarm:
+    state: join
+    advertise_addr: workertwo
+    join_token: "SWMTKN-1-688m62bmc7um0shuxsea0u8c518l1nhr8awvuz9nslcrn3ti3g-1y0ulnera9vcvscqjl53h1va7 10.154.0.25:2377"
+    remote_addrs: wasimvm:2377

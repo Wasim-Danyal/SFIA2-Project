@@ -1,0 +1,11 @@
+[docker]
+worker
+workertwo
+wasimvm
+
+[manager]
+wasimvm
+
+[worker]
+worker
+workertwo
