@@ -1,18 +1,60 @@
 version: '3.7'
 services:
+    nginx:
+      image: nginx
+      deploy:
+            replicas: 4
+      ports:
+        - target: 80
+          published: 80
+          protocol: tcp
+      volumes:
+      - type: bind
+        source: ./nginx/nginx.conf
+        target: /etc/nginx/nginx.conf
     service1:
         build:
             context: ./service1
             dockerfile: Dockerfile
         image: wasimd/service1
+        deploy:
+          replicas: 4
         ports:
         - target: 5000
           published: 5000
+          protocol: tcp
+        environment:
+          DATABASE_URI: ${DATABASE_URI}
     service2:
         build:
             context: ./service2
             dockerfile: Dockerfile
         image: wasimd/service2
+        deploy:
+          replicas: 4
         ports:
         - target: 5001
           published: 5001
+          protocol: tcp
+    service3:
+        build:
+            context: ./service3
+            dockerfile: Dockerfile
+        image: wasimd/service3
+        deploy:
+          replicas: 4
+        ports:
+        - target: 5002
+          published: 5002 
+          protocol: tcp
+    service4:
+        build:
+            context: ./service4
+            dockerfile: Dockerfile
+        image: wasimd/service4
+        deploy:
+          replicas: 4
+        ports:
+        - target: 5003
+          published: 5003
+          protocol: tcp
