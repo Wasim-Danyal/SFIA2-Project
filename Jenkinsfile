@@ -9,7 +9,8 @@ pipeline{
 
                  steps{
 
-                 sh './scripts/build.sh'
+                sh 'chmod +x ./scripts/*'
+                sh './scripts/build.sh'
                  
                  }
 
