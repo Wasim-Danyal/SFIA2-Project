@@ -10,12 +10,12 @@
   docker_swarm:
     state: join
     advertise_addr: worker
-    join_token: "SWMTKN-1-05clcjm074kj48wvfmsfn6qvg8adl7tijbh0p0roa23kis11kx-a066j5iqv0empscni6x03se7t"
+    join_token: "SWMTKN-1-4d1ajomorytdm0utp4suk4kc9gh2yxdqsjlv9jq2k3unj6cz52-9im1knp92moptnqidp3yylz8b"
     remote_addrs: sfia2:2377
 
 - name: Add second node
   docker_swarm:
     state: join
     advertise_addr: workertwo
-    join_token: "SWMTKN-1-05clcjm074kj48wvfmsfn6qvg8adl7tijbh0p0roa23kis11kx-a066j5iqv0empscni6x03se7t"
+    join_token: "SWMTKN-1-4d1ajomorytdm0utp4suk4kc9gh2yxdqsjlv9jq2k3unj6cz52-9im1knp92moptnqidp3yylz8b"
     remote_addrs: sfia2:2377
