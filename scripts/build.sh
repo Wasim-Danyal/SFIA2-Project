@@ -9,5 +9,5 @@ mkdir -p ~/.local/bin
 echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
 pip install --user ansible
-ansible --version
-pwd
+~/.local/bin/ansible --version
+~/.local/bin/ansible-playbook -i inventory.cfg playbook.yaml
