@@ -1,2 +1,3 @@
 #!/bin/bash
-ssh -tt wasim@sfia2 EOF
+ssh -t wasim@sfia2 << EOF
+EOF
