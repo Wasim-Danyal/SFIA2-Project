@@ -1,5 +1,5 @@
 if ! [ -d SFIA2 ]; then
-    git clone https://github.com/ngww/SFIA2.git
+    git clone https://github.com/Wasim-Danyal/SFIA2-Project.git
 fi
 sudo apt-get update
 sudo apt-get install python -y
