@@ -19,7 +19,6 @@ pipeline{
 
                 steps{
 
-                sh './scripts/build.sh'
                 sh './scripts/test_service1.sh'
                 sh './scripts/test_service2.sh'
                 sh './scripts/test_service3.sh'
