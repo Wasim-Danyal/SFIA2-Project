@@ -1,2 +1,2 @@
 #!/bin/bash
-sh "ssh -oStrictHostKeyChecking=no wasim_danyal1@sfia2"
+sh "ssh wasim_danyal1@sfia2"
