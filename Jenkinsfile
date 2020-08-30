@@ -5,15 +5,6 @@ pipeline{
 
         stages{
 
-            stage('SSH'){
-                
-                steps{
-                    
-                    sh './scripts/ssh_main.sh'
-
-                }
-            }
-
             stage('Testing Environment Setup'){
 
                  steps{
