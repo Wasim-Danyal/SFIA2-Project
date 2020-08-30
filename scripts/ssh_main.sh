@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh wasim_danyal1@sfia2
+ssh -oStrictHostKeyChecking=no wasim_danyal1@sfia2
