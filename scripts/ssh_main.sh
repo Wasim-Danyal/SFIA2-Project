@@ -1,3 +1,2 @@
 #!/bin/bash
-ssh -t wasim_danyal1@sfia2 << EOF
-EOF
+sh "ssh -oStrictHostKeyChecking=no wasim_danyal1@sfia2"
