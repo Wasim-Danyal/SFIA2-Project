@@ -1,0 +1,1 @@
+ssh -t wasim@sfia2 EOF
