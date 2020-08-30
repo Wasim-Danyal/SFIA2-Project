@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh -t wasim@sfia2 EOF
+ssh -T wasim@sfia2 EOF
