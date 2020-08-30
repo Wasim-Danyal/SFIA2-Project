@@ -1,11 +1,28 @@
 [docker]
 worker
 workertwo
-wasimvm
+sfia2
+
+[docker:vars]
+ansible_user=wasim
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=~/.ssh/id_rsa
+
 
 [manager]
-wasimvm
+sfia2
+
+[manager:vars]
+ansible_user=wasim
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [worker]
 worker
 workertwo
+
+
+[worker:vars]
+ansible_user=wasim
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=~/.ssh/id_rsa
