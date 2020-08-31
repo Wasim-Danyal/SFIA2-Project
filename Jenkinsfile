@@ -10,8 +10,7 @@ pipeline{
             stage('Build'){
 
                  steps{
-                     
-                sh 'export ${DATABASE_URI}'       
+   
                 sh 'chmod +x ./scripts/*'
                 sh './scripts/build.sh'
                  
