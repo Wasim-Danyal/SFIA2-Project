@@ -4,7 +4,7 @@ workertwo
 sfia2
 
 [docker:vars]
-ansible_user=wasim_danyal1
+ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ansible_ssh_private_key_file=~/.ssh/id_rsa
 
@@ -13,7 +13,7 @@ ansible_ssh_private_key_file=~/.ssh/id_rsa
 sfia2
 
 [manager:vars]
-ansible_user=wasim_danyal1
+ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ansible_ssh_private_key_file=~/.ssh/id_rsa
 
@@ -23,6 +23,6 @@ workertwo
 
 
 [worker:vars]
-ansible_user=wasim_danyal1
+ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ansible_ssh_private_key_file=~/.ssh/id_rsa
