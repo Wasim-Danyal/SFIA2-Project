@@ -11,6 +11,6 @@ echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
 pip install --user ansible
 ~/.local/bin/ansible --version
-~/.local/bin/ansible-playbook -i inventory.cfg playbook.yaml
+~/.local/bin/ansible-playbook -i inventory playbook.yaml
 export DATABASE_URI="${DATABASE_URI}"
 docker-compose build
