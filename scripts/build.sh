@@ -14,3 +14,5 @@ pip install --user ansible
 ~/.local/bin/ansible-playbook -i inventory playbook.yaml
 export DATABASE_URI="${DATABASE_URI}"
 docker-compose build
+docker-compose push
+
