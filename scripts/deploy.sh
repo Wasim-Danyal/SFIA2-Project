@@ -1,4 +1,5 @@
 #! /bin/bash
-ssh jenkins@sfia2
-cd SFIA2-Project
+hostname
+docker swarm init
+docker swarm join-token worker
 docker stack deploy --compose-file docker-compose.yaml stack
