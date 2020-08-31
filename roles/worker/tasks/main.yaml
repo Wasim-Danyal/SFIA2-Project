@@ -10,5 +10,5 @@
   docker_swarm:
     state: join
     advertise_addr: worker
-    join_token: "SWMTKN-1-4q2g9ju6hu33yw52ij60y5gf8ycb6jqgizmqz8hanpkpkgwt9l-4xgx1qy8uka4ze1m3u0qce65l 10.154.0.58:2377"
+    join_token: "SWMTKN-1-4q2g9ju6hu33yw52ij60y5gf8ycb6jqgizmqz8hanpkpkgwt9l-4xgx1qy8uka4ze1m3u0qce65l"
     remote_addrs: sfia2:2377
