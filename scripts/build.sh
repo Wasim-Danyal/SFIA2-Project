@@ -16,4 +16,7 @@ export DATABASE_URI="${DATABASE_URI}"
 docker login -u "${username}" -p "${password}"
 docker-compose down --rmi all
 docker-compose build
-docker-compose push
+docker push wasimd/service1:latest
+docker push wasimd/service2:latest
+docker push wasimd/service3:latest
+docker push wasimd/service4:latest
