@@ -10,7 +10,7 @@ sudo apt install -y python3 python3-pip
 mkdir -p ~/.local/bin
 echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
-pip install --user ansible
+pip3 install --user ansible
 ansible-playbook -i inventory playbook.yaml
 export DATABASE_URI="${DATABASE_URI}"
 docker-compose build
