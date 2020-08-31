@@ -1,5 +1,4 @@
 #! /bin/bash
-ssh jenkins@sfia2 bash -c " {
 cd SFIA2-Project
 cd service1
 python3 -m venv venv
@@ -24,4 +23,3 @@ cd service4
 pip3 install -r requirements.txt
 python3 -m pytest --cov application --cov-report term-missing
 cd ..
-}"
