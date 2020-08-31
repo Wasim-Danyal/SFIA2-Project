@@ -1,5 +1,5 @@
 #! /bin/bash
-ssh user@host bash -c " {
+ssh jenkins@sfia2 bash -c " {
 cd SFIA2-Project
 cd service1
 python3 -m venv venv
