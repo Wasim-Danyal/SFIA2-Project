@@ -23,7 +23,7 @@ pipeline{
             stage('Test'){
 
                 steps{
-
+        
                 sh './scripts/test.sh'
 
                 }
@@ -32,7 +32,7 @@ pipeline{
             stage('Deploy'){
 
                 steps{
-
+                sh 'ssh jenkins@sfia2'
                 sh './scripts/deploy.sh'
                 }
             }
