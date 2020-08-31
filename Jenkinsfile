@@ -33,7 +33,7 @@ pipeline{
 
                 steps{
                 sh 'ssh jenkins@sfia2'
-                sh './scripts/deploy.sh'
+                sh 'docker stack deploy --compose-file docker-compose.yaml stack'
                 }
             }
         }
