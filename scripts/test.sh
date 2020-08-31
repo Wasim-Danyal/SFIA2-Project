@@ -6,8 +6,6 @@ python3 -m venv venv
 pip3 install -r requirements.txt
 pip3 install pytest-cov
 pip3 install flask_testing
-pip3 install flask-testing
-pip install pytest-cov
 python3 -m pytest --cov application --cov-report term-missing
 cd ..
 
