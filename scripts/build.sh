@@ -11,3 +11,4 @@ pip install --user ansible
 ~/.local/bin/ansible --version
 ~/.local/bin/ansible-playbook -i inventory.cfg playbook.yaml
 docker-compose build
+pwd
