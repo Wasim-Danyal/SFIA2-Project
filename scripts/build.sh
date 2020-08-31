@@ -13,7 +13,7 @@ pip install --user ansible
 ~/.local/bin/ansible --version
 ~/.local/bin/ansible-playbook -i inventory playbook.yaml
 export DATABASE_URI="${DATABASE_URI}"
+docker login -u "${username}" -p "${password}"
 docker-compose down --rmi all
 docker-compose build
-docker login -u "${username}" -p "${password}"
 docker-compose push
