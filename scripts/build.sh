@@ -6,11 +6,11 @@ cd SFIA2-Project
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt install -y python3 python3-pip
+export DATABASE_URI="${DATABASE_URI}"
+docker-compose build
 mkdir -p ~/.local/bin
 echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
 pip install --user ansible
 ~/.local/bin/ansible --version
 ~/.local/bin/ansible-playbook -i inventory playbook.yaml
-export DATABASE_URI="${DATABASE_URI}"
-docker-compose build
