@@ -14,3 +14,10 @@
   docker_swarm:
     state: inspect
   register: swarm_info
+
+- name: Add node
+  docker_swarm:
+    state: join
+    advertise_addr: manager
+    join_token: "SWMTKN-1-4vhajzr3kbj7dsipch9mmodqa0r6bcsb8cncjskdtnr863resi-8zdpcvej51omn91376ts2sqb1"
+    remote_addrs: jenkins:2377
