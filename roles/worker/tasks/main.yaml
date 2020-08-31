@@ -7,8 +7,5 @@
     name: docker
 
 - name: Add node
-  docker_swarm:
-    state: join
-    advertise_addr: worker
-    join_token: "SWMTKN-1-4vhajzr3kbj7dsipch9mmodqa0r6bcsb8cncjskdtnr863resi-8zdpcvej51omn91376ts2sqb1"
-    remote_addrs: sfia2:2377
+  shell: docker swarm join --token {{ hostvars['token']['value'] }} {{ hostvars['managerhostname']['value'] }}:2377
+  ignore_errors: true    

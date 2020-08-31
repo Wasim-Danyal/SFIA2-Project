@@ -1,23 +1,21 @@
-- name: install pip
-  apt:
-    name: python3-pip
-
-- name: install docker with pip
-  pip:
-    name: docker
-
-- name: Start Swarm
+- name: Initialise Swarm
   docker_swarm:
     state: present
 
-- name: Inspect swarm
-  docker_swarm:
-    state: inspect
-  register: swarm_info
+- name: Get Host
+  shell: hostname
+  register: managerhostname
 
-- name: Add node
-  docker_swarm:
-    state: join
-    advertise_addr: manager
-    join_token: "SWMTKN-1-4vhajzr3kbj7dsipch9mmodqa0r6bcsb8cncjskdtnr863resi-8zdpcvej51omn91376ts2sqb1"
-    remote_addrs: jenkins:2377
+- name: Worker token
+  shell: docker swarm join-token worker
+  register: token
+
+- name: Get manager hostname
+  add_host:
+    name: "managerhostname"
+    value: "{{ managerhostname.stdout }}"
+
+- name: Get worker token
+  add_host:
+    name: "token"
+    value: "{{ token.stdout }}"
