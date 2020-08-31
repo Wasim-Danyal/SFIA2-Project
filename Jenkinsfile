@@ -1,7 +1,9 @@
 pipeline{
 
     agent any
-
+    environment{
+        DATABASE_URI=credentials('DATABASE_URI')
+    }
 
         stages{
 
@@ -11,6 +13,7 @@ pipeline{
 
                 sh 'chmod +x ./scripts/*'
                 sh './scripts/build.sh'
+                sh 'export ${DATABASE_URI}'
                  
                  }
 
