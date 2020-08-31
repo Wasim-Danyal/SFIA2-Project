@@ -3,8 +3,8 @@ ssh jenkins@sfia2
 if ! [ -d SFIA2-Project ]; then
     git clone https://github.com/Wasim-Danyal/SFIA2-Project.git
 fi
-git pull
 cd SFIA2-Project
+git pull
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt install -y python3 python3-pip
