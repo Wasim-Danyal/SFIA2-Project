@@ -1,5 +1,5 @@
 #! /bin/bash
-ssh wasim_danyal1@sfia2
+ssh jenkins@sfia2
 if ! [ -d SFIA2-Project ]; then
     git clone https://github.com/Wasim-Danyal/SFIA2-Project.git
 fi
