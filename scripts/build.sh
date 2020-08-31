@@ -12,5 +12,5 @@ source ~/.bashrc
 pip install --user ansible
 ~/.local/bin/ansible --version
 ~/.local/bin/ansible-playbook -i inventory.cfg playbook.yaml
-export "${DATABASE_URI}"
+export DATABASE_URI="${DATABASE_URI}"
 docker-compose build
