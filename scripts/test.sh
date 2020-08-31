@@ -22,5 +22,5 @@ cd service4
 python -m venv venv
 . venv/bin/activate
 pip3 install -r requirements.txt
-python3 -m pytest --cov=application 
+pytest --cov=application 
 cd ..
