@@ -7,5 +7,5 @@
     name: docker
 
 - name: Add node
-  shell: docker swarm join --token {{ hostvars['token']['value'] }} {{ hostvars['managerhostname']['value'] }}:2377
+  shell: docker swarm join --token {{ hostvars['token']['value'] }}
   ignore_errors: true    
