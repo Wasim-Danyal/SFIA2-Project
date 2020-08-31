@@ -3,6 +3,8 @@ pipeline{
     agent any
     environment{
         DATABASE_URI=credentials('DATABASE_URI')
+        username=credentials('username')
+        password=credentials('password')
     }
 
         stages{
