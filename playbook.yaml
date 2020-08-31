@@ -1,10 +1,12 @@
 - hosts: docker
   become: true
+  become_user: jenkins
   roles:
     - docker
 
 - hosts: manager
   become: true
+  become_user: jenkins
   vars:
     swarm_info:
   roles:
@@ -16,6 +18,7 @@
 
 - hosts: worker
   become: true
+  become_user: jenkins
   vars:
     swarm_info:
   roles:
