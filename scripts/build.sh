@@ -1,3 +1,4 @@
+#! /bin/bash
 if ! [ -d SFIA2-Project ]; then
     git clone https://github.com/Wasim-Danyal/SFIA2-Project.git
 fi
