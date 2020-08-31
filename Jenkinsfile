@@ -32,7 +32,7 @@ pipeline{
             stage('Deploy'){
 
                 steps{
-                sh 'ssh jenkins@sfia2'
+                    
                 sh 'docker stack deploy --compose-file docker-compose.yaml stack'
                 }
             }

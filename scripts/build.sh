@@ -1,5 +1,5 @@
 #! /bin/bash
-ssh jenkins@sfia2 << EOF
+ssh user@host bash -c " {
 if ! [ -d SFIA2-Project ]; then
     git clone https://github.com/Wasim-Danyal/SFIA2-Project.git
 fi
@@ -16,4 +16,5 @@ ansible-playbook -i inventory playbook.yaml
 export DATABASE_URI="${DATABASE_URI}"
 docker-compose down --rmi all
 docker-compose build
-EOF
+}"
+
