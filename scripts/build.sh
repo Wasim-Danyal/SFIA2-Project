@@ -20,4 +20,3 @@ docker push wasimd/service1:latest
 docker push wasimd/service2:latest
 docker push wasimd/service3:latest
 docker push wasimd/service4:latest
-docker-compose pull
