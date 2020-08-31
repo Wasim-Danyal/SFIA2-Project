@@ -5,14 +5,12 @@ if ! [ -d SFIA2-Project ]; then
 fi
 cd SFIA2-Project
 git pull
+sudo apt install -y python3 python3-pip
 export DATABASE_URI="${DATABASE_URI}"
 docker-compose down --rmi all
 docker-compose build
 docker login -u "${username}" -p "${password}"
 docker-compose push
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt install -y python3 python3-pip
 mkdir -p ~/.local/bin
 echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
