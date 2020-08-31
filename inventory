@@ -5,7 +5,7 @@ sfia2
 [docker:vars]
 ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_private_key_file=/home/jenkins/.ssh/id_rsa
+ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 
 [manager]
@@ -14,7 +14,7 @@ sfia2
 [manager:vars]
 ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_private_key_file=/home/jenkins/.ssh/id_rsa
+ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [worker]
 worker
@@ -23,4 +23,4 @@ worker
 [worker:vars]
 ansible_user=jenkins
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_private_key_file=/home/jenkins/.ssh/id_rsa
+ansible_ssh_private_key_file=~/.ssh/id_rsa
