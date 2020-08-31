@@ -1,10 +1,25 @@
-if ! [ -d SFIA2 ]; then
-    git clone https://github.com/Wasim-Danyal/SFIA2-Project.git
-fi
+#! /bin/bash
 cd SFIA2-Project
-sudo apt-get update
-sudo apt install -y python3 python3-pip python3-venv
-python3 -m venv venv 
-source venv/bin/activate
 cd service1
-pwd
+python3 -m venv venv
+. venv/bin/activate
+pip3 install -r requirements.txt
+pip3 install pytest-cov
+pip3 install flask_testing
+python3 -m pytest --cov application --cov-report term-missing
+cd ..
+
+cd service2
+pip3 install -r requirements.txt
+python3 -m pytest --cov application --cov-report term-missing
+cd ..
+
+cd service3
+pip3 install -r requirements.txt
+python3 -m pytest --cov application --cov-report term-missing
+cd ..
+
+cd service4
+pip3 install -r requirements.txt
+python3 -m pytest --cov application --cov-report term-missing
+cd ..

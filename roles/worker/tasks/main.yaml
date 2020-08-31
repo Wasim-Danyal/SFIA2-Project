@@ -6,16 +6,9 @@
   pip:
     name: docker
 
-- name: Add first node
+- name: Add node
   docker_swarm:
     state: join
     advertise_addr: worker
-    join_token: "SWMTKN-1-4d1ajomorytdm0utp4suk4kc9gh2yxdqsjlv9jq2k3unj6cz52-9im1knp92moptnqidp3yylz8b"
-    remote_addrs: sfia2:2377
-
-- name: Add second node
-  docker_swarm:
-    state: join
-    advertise_addr: workertwo
-    join_token: "SWMTKN-1-4d1ajomorytdm0utp4suk4kc9gh2yxdqsjlv9jq2k3unj6cz52-9im1knp92moptnqidp3yylz8b"
+    join_token: "SWMTKN-1-5eeuyoopz44xnpxka13wdnvarm6vjpogwfhdoxjh43ihopznco-2taod3nn2agr90mas4ma538w8"
     remote_addrs: sfia2:2377

@@ -1,15 +1,20 @@
 pipeline{
 
     agent any
-
+    environment{
+        DATABASE_URI=credentials('DATABASE_URI')
+        username=credentials('username')
+        password=credentials('password')
+    }
 
         stages{
 
             stage('Build'){
 
                  steps{
-
-                 sh './scripts/build.sh'
+   
+                sh 'chmod +x ./scripts/*'
+                sh './scripts/build.sh'
                  
                  }
 
