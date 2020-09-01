@@ -11,6 +11,7 @@
    * [Previous Project Reflection](#Previous-Project-Reflection)
    * [Initial Design](#Initial-Design)
    * [Implemented Approach](#Implemented-Approach)
+   * [Technologies](#Technologies)
 - [Application Design](#Application-Design)
    * [User Interface](#UI)
 - [Risk Assessment](#Risk-Assessment)
@@ -41,7 +42,7 @@ The brief that has been assigned is to create an application that generates “O
 
 
 - Service 2: Generate a random object which will be used with the object generated from service 3, these will both be based on to generate an object for service 4.
-![enter imge description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s2t.png)
+
 
 - Service 3: Same objective as service 2.
 
@@ -77,6 +78,16 @@ The actual implemented approach is the same as the initial approach however the 
 - Service 3 : Return a city in the country generated from service 2
 - Service 4 : Return a food which is popular in the city. The food would be randomly returned from a list in the service. In comparison to the previous initial approach, the 	   service still follows the project specification as there is still logic which is implemented in the code.
 
+### Technologies 
+
+- Jira for agile project tracking
+- GitHub for Version Control and as a Version Control System Provider
+- Docker for containerisation
+- NGINX as a reverse proxy and web server
+- Jenkins as a CI/CD Pipeline server for automatic testing and deployment
+- Anisble for environment provisioning for servers
+
+
 ## Application Design
 
 
@@ -92,7 +103,7 @@ The actual implemented approach is the same as the initial approach however the 
     ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/ui2.PNG)
 
 ## Risk Assessment
-Below is the risk assessment for the SFIA2 application.
+Below is the risk assessment for the SFIA2 application. The full risk assessment can be viewed here: https://docs.google.com/spreadsheets/d/12LZTFQikM4--7DIpsfTX4mA11b8i3oXAg9AW9WCVlz8/edit#gid=0
 
 ## Database Design
 The main structure of the DB is a table containing the fields for the generated destinations:
@@ -132,6 +143,7 @@ When testing each service i wanted to test areas that users would use and also t
 ## Project Review
 
 ### Known Issues
+- One test fails for service one as ir requires a status ode 200, it returns as a fail if tests are ran before the site is online.
 
 ### Future Improvements
 - Implement CSS with HTML to make the design of pages aesthetically pleasing for the user
