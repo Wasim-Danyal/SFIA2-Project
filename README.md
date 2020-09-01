@@ -127,6 +127,7 @@ When testing each service i wanted to test areas that users would use and also t
 - **Service 1**
     - The tests done for service one were to ensure that access to pages were working and the status code returned was 200 which ensures that the request to the page was              successful. Below is a coverage report on this test:
     
+    ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s1t.PNG)
     
 - **Service 2**
     - The test done for service 2 was to ensure that requests to the api would return values that were intended to be returned from a list. The structure behind service 1 was to return a random item from the list. Below is a coverage report on this test:
@@ -136,13 +137,13 @@ When testing each service i wanted to test areas that users would use and also t
     
     
 - **Service 3**
-    - reserved
+    - Send a post request as a country, assert status code 200 is returned and the city variable assigned to the country:
     
     ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s3t.PNG)
 
 
 - **Service 4**
-    - reserved
+    - Send a post request as a city to return the potentially assigned food variables:
     
     ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s4t.PNG)
  
