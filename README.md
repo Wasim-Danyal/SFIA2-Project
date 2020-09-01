@@ -114,8 +114,7 @@ When testing each service i wanted to test areas that users would use and also t
 
 - **Service 4**
     - reserved
-    
-![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s4t.png)
+    ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s2t.PNG)
  
 
 ## Project Review
