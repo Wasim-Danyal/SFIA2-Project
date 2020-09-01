@@ -120,7 +120,6 @@ The original pipeline did not use Ansible or NGINX however after learning about 
 
 ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/pipeline.PNG)
 
-
 ## Testing
 
 When testing each service i wanted to test areas that users would use and also test the core functionalities of the services. Below are summaries of the tests for each service:
