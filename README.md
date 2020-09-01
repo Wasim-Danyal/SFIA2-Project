@@ -11,14 +11,12 @@
    * [Previous Project Reflection](#Previous-Project-Reflection)
    * [Initial Design](#Initial-Design)
    * [Implemented Approach](#Implemented-Approach)
-   * [Tools](#Tools-used)
 - [Application Design](#Application-Design)
    * [User Interface](#UI)
 - [Risk Assessment](#Risk-Assessment)
+- [Database-Design](#Database-Design)
 - [CI Pipeline](#CI-Pipeline)
 - [Testing](#Testing)
-	* [Unit Testing](#Unit-Testing) 
-	* [Integration-Testing](#Integration-Testing)  
  - [Project Review](#Project-Review)
  	* [Known Issues](#Known-Issues)
    * [Future Improvements](#Future-Improvements)
@@ -78,21 +76,25 @@ The actual implemented approach is the same as the initial approach however the 
 - Service 2 : Return a random country
 - Service 3 : Return a city in the country generated from service 2
 - Service 4 : Return a food which is popular in the city. The food would be randomly returned from a list in the service. In comparison to the previous initial approach, the 	   service still follows the project specification as there is still logic which is implemented in the code.
-### Tools used
 
 ## Application Design
+
+- Front Page
+
+- Generate Page
 
 ### User Interface 
 
 ## Risk Assessment
+Below is the risk assessment for the SFIA2 application.
+
+## Database Design
+The main structure of the DB is a table containing the fields for the generated destinations.
 
 ## CI Pipeline
 
 ## Testing
 
-### Unit Testing
-
-### Integration Testing
 When testing each service i wanted to test areas that users would use and also test the core functionalities of the services. Below are summaries of the tests for each service:
 
 - **Service 1**
@@ -116,6 +118,8 @@ When testing each service i wanted to test areas that users would use and also t
 ### Known Issues
 
 ### Future Improvements
+- Implement CSS with HTML to make the design of pages aesthetically pleasing for the user
+- Change display of first generated destination to most recently generated destination
 
 ## Author 
 
