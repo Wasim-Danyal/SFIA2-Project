@@ -79,17 +79,25 @@ The actual implemented approach is the same as the initial approach however the 
 
 ## Application Design
 
+
+### User Interface 
+
 - Front Page
+
+    ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/ui1.PNG)
+
 
 - Generate Page
 
-### User Interface 
+    ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/ui2.PNG)
 
 ## Risk Assessment
 Below is the risk assessment for the SFIA2 application.
 
 ## Database Design
-The main structure of the DB is a table containing the fields for the generated destinations.
+The main structure of the DB is a table containing the fields for the generated destinations:
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/ui2.PNG)
+
 
 ## CI Pipeline
 
@@ -117,7 +125,7 @@ When testing each service i wanted to test areas that users would use and also t
 - **Service 4**
     - reserved
     
-    ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s2t.PNG)
+    ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s4t.PNG)
  
 
 ## Project Review
