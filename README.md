@@ -115,6 +115,9 @@ The main structure of the DB is a table containing the fields for the generated 
 
 ## CI Pipeline
 
+
+
+
 ## Testing
 
 When testing each service i wanted to test areas that users would use and also test the core functionalities of the services. Below are summaries of the tests for each service:
@@ -143,6 +146,7 @@ When testing each service i wanted to test areas that users would use and also t
  
 
 ## Project Review
+Overall the intial approach was close to the implemented approach only difference was one service change to meet requirements. I think in comparison to my first SFIA project from the xperience gained i was able to tackle this project more efficently with more confidence in the technologies used in the first projects. I faced many issues with deployment of this appliation such as one issue where Jenkins would not deploy th application if Jenkins was installed on another VM, to work around this with improvements i decided to run Jenkins on the main VM as a manage node. This meant that the outcome would be the same as having Jenkins on another node however would be more cost efficient and effectie in the long run if this were deployed properly. It would mean one less VM is used and in the case of downtime or an attack it is quicker to start a new VM and set up Jenkins quicker and get the application deployed quicker as it would be on the same VM.
 
 ### Known Issues
 - One test fails for service one as ir requires a status ode 200, it returns as a fail if tests are ran before the site is online.
