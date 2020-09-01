@@ -41,7 +41,7 @@ The brief that has been assigned is to create an application that generates “O
 
 
 - Service 2: Generate a random object which will be used with the object generated from service 3, these will both be based on to generate an object for service 4.
-
+![enter imge description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s2t.png)
 
 - Service 3: Same objective as service 2.
 
@@ -103,15 +103,20 @@ When testing each service i wanted to test areas that users would use and also t
     
 - **Service 2**
     - The test done for service 2 was to ensure that requests to the api would return values that were intended to be returned from a list. The structure behind service 1 was to return a random item from the list. Below is a coverage report on this test:
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s2t.png)
+    
     
     
 - **Service 3**
     - reserved
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s3t.png)
 
 
 - **Service 4**
     - reserved
     
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/s4t.png)
+ 
 
 ## Project Review
 
