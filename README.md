@@ -105,6 +105,8 @@ The actual implemented approach is the same as the initial approach however the 
 ## Risk Assessment
 Below is the risk assessment for the SFIA2 application. The full risk assessment can be viewed here: https://docs.google.com/spreadsheets/d/12LZTFQikM4--7DIpsfTX4mA11b8i3oXAg9AW9WCVlz8/edit#gid=0
 
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/risk.PNG)
+
 ## Database Design
 The main structure of the DB is a table containing the fields for the generated destinations:
 
