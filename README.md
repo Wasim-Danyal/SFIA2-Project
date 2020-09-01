@@ -96,6 +96,7 @@ Below is the risk assessment for the SFIA2 application.
 
 ## Database Design
 The main structure of the DB is a table containing the fields for the generated destinations:
+
 ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/db.PNG)
 
 
