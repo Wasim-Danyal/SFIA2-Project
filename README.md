@@ -115,7 +115,10 @@ The main structure of the DB is a table containing the fields for the generated 
 
 ## CI Pipeline
 
+The original pipeline did not use Ansible or NGINX however after learning about the technologies and their usage it was implemented in to the CI Pipeline. After implementation images were built and push and then pulled when deploying a stack with swarm. Prior to any automation docker compose would build the image and it would be manually ran. Below is the final pipeline:
 
+
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/SFIA2-Project/docs/documentation/pipeline.PNG)
 
 
 ## Testing
