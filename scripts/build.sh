@@ -5,8 +5,6 @@ fi
 cd SFIA2-Project
 git pull
 sudo apt install -y python3 python3-pip
-docker login -u "${username}" -p "${password}"
-docker-compose push
 mkdir -p ~/.local/bin
 echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 source ~/.bashrc
@@ -15,4 +13,7 @@ ansible-playbook -i inventory playbook.yaml
 export DATABASE_URI="${DATABASE_URI}"
 docker-compose down --rmi all
 docker-compose build
+docker login -u "${username}" -p "${password}"
+docker-compose push
+
 
